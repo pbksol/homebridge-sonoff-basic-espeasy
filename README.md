@@ -166,6 +166,18 @@ This is Sonoff basic plugin for [Homebridge](https://github.com/nfarina/homebrid
      ]
    ```
 
+There is in optional setting "switchType" to show the Sonoff as an outlet.
+
+```
+     "accessories": [
+       {
+         "accessory": "SonoffBasicESPEasy",
+         "name": "Living Room Switch",
+         "ip": "IP_ADDRESS_OF_THE_SONOFF_BASIC",
+         "switchType": "outlet"
+       }
+     ]
+   ```
    ​
 
 3. Restart Homebridge, and your Sonoff basic a will be added to Home app.
