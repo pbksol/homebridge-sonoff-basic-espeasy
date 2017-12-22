@@ -149,7 +149,7 @@ This is Sonoff basic plugin for [Homebridge](https://github.com/nfarina/homebrid
 1. Install required packages.
 
    ```
-   npm install -g homebridge-sonoff-basic-espeasy request
+   npm install -g https://github.com/pbksol/homebridge-sonoff-basic-espeasy-pbk request
    ```
 
    ​
