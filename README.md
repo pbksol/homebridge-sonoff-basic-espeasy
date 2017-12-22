@@ -1,4 +1,4 @@
-# homebridge-sonoff-basic-espeasy
+# homebridge-sonoff-basic-espeasy-pbk
 
 This is Sonoff basic plugin for [Homebridge](https://github.com/nfarina/homebridge). You will need some soldering works to gain access to flash [ESPEasy](https://www.letscontrolit.com/) firmware.
 
