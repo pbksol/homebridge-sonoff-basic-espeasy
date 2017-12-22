@@ -54,14 +54,11 @@ SonoffBasicESPEasyPBK.prototype = {
 				log.debug('State: ' + json.state);
 				callback(null, (json.state == 1));
 				return;
-			} else {
-				callback(null, (json.state == 0));
-				return;
 			}
-
+			
 			log.debug('Error getting power state. (%s)', error);
 
-			callback();
+			callback(null, (json.state == 0));
 		});
 	},
 
