@@ -23,7 +23,7 @@ function SonoffBasicESPEasyPBK(log, config){
 	this.serviceInfo
 		.setCharacteristic(Characteristic.Manufacturer, 'Sonoff')
 		.setCharacteristic(Characteristic.Model, 'Basic Switch')
-		.setCharacteristic(Characteristic.SerialNumber, 'EB1B-ED2E-5EA945508A66');
+		.setCharacteristic(Characteristic.SerialNumber, 'EB1B-ED2E-5EA945508A88');
 
 	this.service
 		.getCharacteristic(Characteristic.On)
