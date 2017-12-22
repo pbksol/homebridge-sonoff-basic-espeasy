@@ -5,10 +5,10 @@ module.exports = function(homebridge){
 	Service = homebridge.hap.Service;
 	Characteristic = homebridge.hap.Characteristic;
 	
-	homebridge.registerAccessory('homebridge-sonoff-basic-espeasy', 'SonoffBasicESPEasy', SonoffBasicESPEasy);
+	homebridge.registerAccessory('homebridge-sonoff-basic-espeasy-pbk', 'SonoffBasicESPEasyPBK', SonoffBasicESPEasyPBK);
 }
 
-function SonoffBasicESPEasy(log, config){
+function SonoffBasicESPEasyPBK(log, config){
 	this.log = log;
 	this.name = config.name || 'Sonoff Switch';
 	this.ip = config.ip;
@@ -31,7 +31,7 @@ function SonoffBasicESPEasy(log, config){
 		.on('set', this.setPowerState.bind(this));
 }
 
-SonoffBasicESPEasy.prototype = {
+SonoffBasicESPEasyPBK.prototype = {
 	getPowerState: function(callback){
 		var log = this.log;
 
