@@ -22,7 +22,7 @@ function SonoffBasicESPEasyPBK(log, config){
 		this.service = new Service.Outlet(this.name);
 		this.service
 			.getCharacteristic(Characteristic.OutletInUse)
-			.on('get', this.getOutletUse.bind(this));
+			.on('get', true);
 	} else {
 		this.service = new Service.Switch(this.name);
 	}
