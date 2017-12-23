@@ -1,5 +1,7 @@
 # homebridge-sonoff-basic-espeasy-pbk
 
+This is a fork of a nice plugin. Because I'm not smart enough for Github, I forked it. The perfect solution would be an integration of the changes and extensions I did into the original plugin. But hey… I can do some coding, but that Github-Universe is bejond my capabilities…
+
 This is Sonoff basic plugin for [Homebridge](https://github.com/nfarina/homebridge). You will need some soldering works to gain access to flash [ESPEasy](https://www.letscontrolit.com/) firmware.
 
 ![Sonoff Basic](https://user-images.githubusercontent.com/73107/26883363-94d1540a-4bcf-11e7-8dbe-3433ec023008.jpg)
