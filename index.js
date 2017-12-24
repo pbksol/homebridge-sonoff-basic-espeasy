@@ -80,7 +80,7 @@ SonoffBasicESPEasyPBK.prototype = {
 			log.debug('Error setting power state. (%s)', error);
 		});
 
-		callback(error);
+		callback();
 	},
 
 	identify: function(callback){
