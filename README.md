@@ -2,6 +2,8 @@
 
 This is a fork of a nice plugin. Because I'm not smart enough for Github, I forked it. The perfect solution would be an integration of the changes and extensions I did into the original plugin. But hey… I can do some coding, but that Github-Universe is bejond my capabilities…
 
+Main changed: you can choose which Type the device is (outlet, lightbulb) which is optional. I changed the timeout values to more realistic ones. The plugin now gives a proper "no answer" if there is a timeout. The original one just reported the last known state which is mislading.
+
 This is Sonoff basic plugin for [Homebridge](https://github.com/nfarina/homebridge). You will need some soldering works to gain access to flash [ESPEasy](https://www.letscontrolit.com/) firmware.
 
 ![Sonoff Basic](https://user-images.githubusercontent.com/73107/26883363-94d1540a-4bcf-11e7-8dbe-3433ec023008.jpg)
@@ -161,22 +163,22 @@ This is Sonoff basic plugin for [Homebridge](https://github.com/nfarina/homebrid
    ```
      "accessories": [
        {
-         "accessory": "SonoffBasicESPEasy",
+         "accessory": "SonoffBasicESPEasyPBK",
          "name": "Living Room Switch",
          "ip": "IP_ADDRESS_OF_THE_SONOFF_BASIC"
        }
      ]
    ```
 
-There is in optional setting "switchType" to show the Sonoff as an outlet.
+There is in optional setting "switchType" to show the Sonoff as an outlet or lightbulb.
 
 ```
      "accessories": [
        {
-         "accessory": "SonoffBasicESPEasy",
+         "accessory": "SonoffBasicESPEasyPBK",
          "name": "Living Room Switch",
          "ip": "IP_ADDRESS_OF_THE_SONOFF_BASIC",
-         "switchType": "outlet"
+         "switchType": "outlet|lightbulb"
        }
      ]
    ```
