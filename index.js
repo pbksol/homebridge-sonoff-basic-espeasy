@@ -67,7 +67,7 @@ SonoffBasicESPEasyPBK.prototype = {
 
 		request.get({
 			url: 'http://' + this.ip + '/control?cmd=event,' + ((state) ? 'PowerOn' : 'PowerOff'),
-			timeout: 10000
+			timeout: 15000
 		}, function(error, response, body){
 			if(!error && response.statusCode == 200){
 				if(body == 'OK')
