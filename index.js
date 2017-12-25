@@ -17,12 +17,15 @@ function SonoffBasicESPEasyPBK(log, config){
 		throw new Error('Your must provide IP address of the switch.');
 	
 	this.outlet = (config["switchType"] !== undefined) ? ((config["switchType"] == "outlet") ? true : false) : false;
+	this.lightbulb = (config["switchType"] !== undefined) ? ((config["switchType"] == "lightbulb") ? true : false) : false;
 	
 	if (this.outlet) {
 		this.service = new Service.Outlet(this.name);
 		this.service
 			.getCharacteristic(Characteristic.OutletInUse)
 			.on('get', this.getPowerState.bind(this));
+	} else if (this.lightbulb) {
+		this.service = new Service.Lightbulb(this.name);
 	} else {
 		this.service = new Service.Switch(this.name);
 	}
