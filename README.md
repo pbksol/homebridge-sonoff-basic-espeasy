@@ -2,7 +2,7 @@
 
 This is a fork of a nice plugin. Because I'm not smart enough for Github, I forked it. The perfect solution would be an integration of the changes and extensions I did into the original plugin. But hey… I can do some coding, but that Github-Universe is bejond my capabilities…
 
-Main changed: you can choose which Type the device is (outlet, lightbulb) which is optional. I changed the timeout values to more realistic ones. The plugin now gives a proper "no answer" if there is a timeout. The original one just reported the last known state which is mislading.
+Main changes: you can choose which Type the device is (outlet, lightbulb) which is optional. I changed the timeout values to more realistic ones. The plugin now gives a proper "no answer" if there is a timeout. The original one just reported the last known state which is mislading.
 
 This is Sonoff basic plugin for [Homebridge](https://github.com/nfarina/homebridge). You will need some soldering works to gain access to flash [ESPEasy](https://www.letscontrolit.com/) firmware.
 
