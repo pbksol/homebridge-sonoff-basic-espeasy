@@ -49,7 +49,7 @@ SonoffBasicESPEasyPBK.prototype = {
 
 		request.get({
 			url: 'http://' + this.ip + '/control?cmd=status,gpio,12',
-			timeout: 10000
+			timeout: 25000
 		}, function(error, response, body){
 			if(!error && response.statusCode == 200){
 				var json = JSON.parse(body);
@@ -70,7 +70,7 @@ SonoffBasicESPEasyPBK.prototype = {
 
 		request.get({
 			url: 'http://' + this.ip + '/control?cmd=event,' + ((state) ? 'PowerOn' : 'PowerOff'),
-			timeout: 15000
+			timeout: 25000
 		}, function(error, response, body){
 			if(!error && response.statusCode == 200){
 				if(body == 'OK')
